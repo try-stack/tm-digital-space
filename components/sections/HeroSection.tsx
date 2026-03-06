@@ -264,7 +264,7 @@ const HeroSection = () => {
       />
 
       <div className="container-custom relative z-10 w-full">
-        <div className="grid lg:grid-cols-2 gap-12 xl:gap-20 items-center min-h-[calc(100vh-5rem)] py-16">
+        <div className="grid lg:grid-cols-2 gap-8 xl:gap-12 items-center min-h-[calc(100vh-5rem)] py-10">
 
           {/* Left column */}
           <div className="flex flex-col justify-center">

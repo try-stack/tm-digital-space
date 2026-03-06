@@ -53,22 +53,22 @@ const WhyChooseSection = () => {
       <div className="container-custom">
         {/* Section Header */}
         <motion.div
-          className="text-center mb-16"
+          className="text-center mb-10"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold mb-3">
             Why Choose <span className="gradient-text">TM Digital Space?</span>
           </h2>
-          <p className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
             We don&apos;t just build websites — we build digital foundations for success
           </p>
         </motion.div>
 
         {/* Animated Stats */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-20">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
           {stats.map((stat, index) => (
             <AnimatedCounter
               key={index}
@@ -83,29 +83,29 @@ const WhyChooseSection = () => {
         </div>
 
         {/* Features Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
           {features.map((feature, index) => {
             const Icon = feature.icon;
             return (
               <motion.div
                 key={index}
-                className="group relative p-8 rounded-2xl bg-gradient-to-br from-slate-50 to-blue-50 dark:from-slate-800 dark:to-blue-900/20 hover:shadow-2xl transition-all duration-500"
+                className="group relative p-6 rounded-2xl bg-gradient-to-br from-slate-50 to-blue-50 dark:from-slate-800 dark:to-blue-900/20 hover:shadow-2xl transition-all duration-500"
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
-                whileHover={{ y: -10, scale: 1.02 }}
+                whileHover={{ y: -5, scale: 1.01 }}
               >
                 {/* Gradient Border Effect */}
                 <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-[#006eff] to-[#00d4ff] opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10 blur-xl" />
                 
                 {/* Icon */}
                 <motion.div
-                  className="w-16 h-16 mb-6 rounded-xl bg-gradient-to-br from-[#006eff] to-[#00d4ff] flex items-center justify-center"
+                  className="w-12 h-12 mb-4 rounded-xl bg-gradient-to-br from-[#006eff] to-[#00d4ff] flex items-center justify-center"
                   whileHover={{ rotate: 360 }}
                   transition={{ duration: 0.6 }}
                 >
-                  <Icon className="w-8 h-8 text-white" />
+                  <Icon className="w-6 h-6 text-white" />
                 </motion.div>
 
                 {/* Content */}
@@ -122,13 +122,13 @@ const WhyChooseSection = () => {
 
         {/* Bottom CTA */}
         <motion.div
-          className="mt-16 text-center"
+          className="mt-10 text-center"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <div className="inline-block p-8 rounded-2xl bg-gradient-to-br from-blue-500 to-purple-600">
+          <div className="inline-block p-6 rounded-2xl bg-gradient-to-br from-blue-500 to-purple-600">
             <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
               Ready to Build Something Amazing?
             </h3>

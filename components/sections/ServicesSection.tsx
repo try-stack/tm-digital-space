@@ -101,14 +101,14 @@ const ServicesSection = () => {
       <div className="container-custom">
         {/* Section Header */}
         <motion.div
-          className="text-center mb-16"
+          className="text-center mb-10"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
           <motion.h2 
-            className="text-4xl md:text-5xl font-bold mb-4"
+            className="text-3xl md:text-4xl font-bold mb-3"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -117,7 +117,7 @@ const ServicesSection = () => {
             What We <span className="gradient-text">Do Best</span>
           </motion.h2>
           <motion.p 
-            className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto"
+            className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -128,7 +128,7 @@ const ServicesSection = () => {
         </motion.div>
 
         {/* Main Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
           {services.map((service, index) => {
             const Icon = service.icon;
             return (
@@ -165,24 +165,24 @@ const ServicesSection = () => {
                 >
                   <div className="flex flex-col h-full">
                     {/* Icon + price row */}
-                    <div className="flex items-start justify-between mb-6">
-                      <div className={`w-16 h-16 rounded-xl bg-gradient-to-br ${service.color} flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}>
-                        <Icon className="w-8 h-8 text-white" />
+                    <div className="flex items-start justify-between mb-4">
+                      <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${service.color} flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}>
+                        <Icon className="w-6 h-6 text-white" />
                       </div>
                       <span className="text-xs font-bold px-3 py-1.5 rounded-full bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300">
                         {service.priceFrom}
                       </span>
                     </div>
 
-                    <h3 className="text-2xl font-bold mb-3 text-gray-900 dark:text-white">
+                    <h3 className="text-xl font-bold mb-2 text-gray-900 dark:text-white">
                       {service.title}
                     </h3>
 
-                    <p className="text-gray-600 dark:text-gray-400 mb-6">
+                    <p className="text-gray-600 dark:text-gray-400 mb-4">
                       {service.description}
                     </p>
 
-                    <ul className="space-y-3 mb-8 flex-grow">
+                    <ul className="space-y-2 mb-5 flex-grow">
                       {service.features.map((feature, idx) => (
                         <li key={idx}>
                           <motion.div
@@ -227,23 +227,23 @@ const ServicesSection = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <h3 className="text-2xl font-bold text-center mb-8">
+          <h3 className="text-xl font-bold text-center mb-5">
             Additional <span className="gradient-text">Capabilities</span>
           </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             {additionalServices.map((service, index) => {
               const Icon = service.icon;
               return (
                 <motion.div
                   key={index}
-                  className="text-center p-6 rounded-xl bg-gradient-to-br from-slate-50 to-blue-50 dark:from-slate-800 dark:to-blue-900/20 hover:shadow-xl transition-shadow duration-300"
+                  className="text-center p-4 rounded-xl bg-gradient-to-br from-slate-50 to-blue-50 dark:from-slate-800 dark:to-blue-900/20 hover:shadow-xl transition-shadow duration-300"
                   initial={{ opacity: 0, scale: 0.9 }}
                   whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                   whileHover={{ y: -5 }}
                 >
-                  <Icon className="w-12 h-12 mx-auto mb-4 text-[#006eff]" />
+                  <Icon className="w-8 h-8 mx-auto mb-2 text-[#006eff]" />
                   <h4 className="font-bold mb-2 text-gray-900 dark:text-white">
                     {service.title}
                   </h4>
@@ -258,14 +258,14 @@ const ServicesSection = () => {
 
         {/* ── Bottom conversion CTA ───────────────────────────────── */}
         <motion.div
-          className="mt-16 rounded-2xl overflow-hidden"
+          className="mt-10 rounded-2xl overflow-hidden"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7, delay: 0.2 }}
         >
           <div
-            className="relative p-8 md:p-10 text-center services-cta-gradient"
+            className="relative p-6 md:p-8 text-center services-cta-gradient"
           >
             {/* Glow */}
             <div className="absolute inset-0 bg-gradient-to-r from-[#006eff]/10 via-[#00d4ff]/5 to-[#006eff]/10 pointer-events-none" />
@@ -274,7 +274,7 @@ const ServicesSection = () => {
             <h3 className="text-2xl md:text-3xl font-black text-white mb-4">
               Get a Free Digital Audit — We&apos;ll Map Out Exactly What You Need
             </h3>
-            <p className="text-slate-400 mb-8 max-w-xl mx-auto">
+            <p className="text-slate-400 mb-6 max-w-xl mx-auto">
               30-minute call, zero pressure. We assess your current digital footprint and recommend the highest-ROI next steps for your Cape Town business.
             </p>
 

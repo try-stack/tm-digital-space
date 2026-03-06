@@ -58,16 +58,16 @@ const ProcessSection = () => {
 
         {/* Header */}
         <motion.div
-          className="text-center mb-16 md:mb-20"
+          className="text-center mb-10 md:mb-14"
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7 }}
         >
-          <span className="inline-block text-xs font-bold tracking-[0.18em] uppercase text-[#006eff] mb-4">
+          <span className="inline-block text-xs font-bold tracking-[0.18em] uppercase text-[#006eff] mb-3">
             How We Work
           </span>
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold mb-3">
             Our <span className="gradient-text">Process</span>
           </h2>
           <p className="text-lg text-gray-500 dark:text-gray-400 max-w-xl mx-auto">

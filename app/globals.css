@@ -23,7 +23,7 @@
   --gradient-dark: linear-gradient(135deg, #0a0e27 0%, #1e293b 100%);
   
   /* Spacing */
-  --section-padding: 6rem;
+  --section-padding: 4.5rem;
   
   /* Animation */
   --transition-base: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -205,12 +205,12 @@ body {
 
 /* Section Spacing */
 .section-padding {
-  padding: 3.5rem 0;
+  padding: 2.5rem 0;
 }
 
 @media (min-width: 768px) {
   .section-padding {
-    padding: 5rem 0;
+    padding: 3.5rem 0;
   }
 }
 
