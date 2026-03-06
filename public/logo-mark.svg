@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none" role="img" aria-label="TM Digital Space logo mark">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#006eff"/>
+      <stop offset="100%" stop-color="#00d4ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="48" height="48" rx="12" fill="url(#g)"/>
+  <!-- T glyph -->
+  <path d="M5 9H21V13H15V39H11V13H5Z" fill="white"/>
+  <!-- M glyph (slab M with downward V-notch peak) -->
+  <path d="M23 9H27L33 22L39 9H43V39H23Z" fill="white"/>
+</svg>

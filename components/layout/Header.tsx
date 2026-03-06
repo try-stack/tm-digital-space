@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, Phone } from 'lucide-react';
+import Logo from '@/components/ui/Logo';
 
 const NAV_LINKS = [
   { label: 'Services',  href: '#services',   id: 'services'   },
@@ -69,16 +70,12 @@ const Header = () => {
           ].join(' ')}>
 
             {/* Logo */}
-            <a href="#home" className="flex items-center gap-2.5 flex-shrink-0 group">
-              <div className="w-8 h-8 rounded-xl bg-gradient-to-br from-[#006eff] to-[#00d4ff] flex items-center justify-center text-white text-xs font-black shadow-[0_4px_14px_rgba(0,110,255,0.4)] group-hover:shadow-[0_4px_20px_rgba(0,110,255,0.6)] transition-shadow">
-                TM
-              </div>
-              <span className={[
-                'text-base font-extrabold tracking-tight transition-colors duration-300',
-                scrolled ? 'text-slate-900 dark:text-white' : 'text-white',
-              ].join(' ')}>
-                TM<span className="gradient-text"> Digital</span>
-              </span>
+            <a href="#home" className="flex-shrink-0 group" aria-label="TM Digital — home">
+              <Logo
+                size={34}
+                variant={scrolled ? 'auto' : 'light'}
+                className="group-hover:opacity-90 transition-opacity"
+              />
             </a>
 
             {/* Desktop nav links */}
@@ -180,10 +177,7 @@ const Header = () => {
           >
             {/* Drawer header */}
             <div className="flex items-center justify-between px-6 py-5 border-b border-black/[0.06] dark:border-white/[0.07]">
-              <div className="flex items-center gap-2">
-                <div className="w-7 h-7 rounded-lg bg-gradient-to-br from-[#006eff] to-[#00d4ff] flex items-center justify-center text-white text-[11px] font-black">TM</div>
-                <span className="font-extrabold text-sm text-slate-900 dark:text-white">TM Digital Space</span>
-              </div>
+              <Logo size={28} showSpace />
               <button
                 onClick={() => setMenuOpen(false)}
                 className="p-1.5 rounded-lg text-slate-400 hover:text-slate-700 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
